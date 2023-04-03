@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper And Scissor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+    <section class="game active" id="game">
+
+        <div class="intro active" id="intro">
+            <div class="img" id="img">
+                <img src="./images/mainImg.png" alt="mainImg">
+            </div>
+            <div class="mainHeading" id="mainHeading">
+                <h1>Rock Paper Scissor Game</h1>
+                <button class="playbtn" id="playbtn">Let's Play</button>
+                <button class="playbtn" id="aboutbtn">About</button>  
+            </div>
+            <div class="aboutme"  id="aboutme">
+                <h2>Project Name - Rock Paper Scissor Game</h2>
+                <h3>Made By - Harman Singh</h3>
+                <h3>School Id - 123456</h3>
+                <p><span>About Project 😀</span><br/>This Project is made using pure HTML , CSS and  JavaScript. It has glassmorphisms effect that give it glassy look. Also I have added nice button hover effect to make it look nice. Animation are there  during transition of the content on the html page. This project is a rock paper scissor game with has dynamic changes of images when user click's the rock, paper and scissor button  as well as result is been declared in the result section.</p>
+                <button class="backbtn" id="backbtn">back</button>
+            </div>
+            
+        </div>
+
+
+        <div class="main-game" id="main-game">
+            
+            <div class="match">
+                <div class="hands" id="hands1">
+                    <img class="player-hand" src="./images/rock.png" alt="img" style="height: 200px;">
+                </div>
+                <div class="hands" class="winner">
+                    <p  id="result">You V/S Computer</p>
+                    <p class="movesleft" id="movesleft">Moves Left : 10</p>
+                </div>
+                <div class="hands" id="hands2">
+                    <img class="computer-hand" src="./images/rock.png" alt="img" style="height: 200px;">
+                </div>        
+                
+            </div>
+    
+            <div class="score">
+                <h2>Score Board</h2>
+                <div class="mainBoard">
+                    <div class="player-score">
+                        <p>Player</p>
+                        <p id="playerScore">0</p>
+                    </div>
+                    <div class="computer-score">
+                        <p>Computer</p>
+                        <p id="computerScore">0</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="option" id="option">
+                <button class="rock" id="rock">rock</button>
+                <button class="paper" id="paper">paper</button>
+                <button class="scissor" id="scissors">scissors</button>
+            </div>
+
+            <div class="mainResult" id="mainResult">
+                <p><span>Game Over !!!</span></p>
+                <p id="resultmain">You Win The Game.</p>
+                <button id="restart" class="restart">Restart</button>
+            </div>
+
+            <div class="exit-game" id="exitBox">
+                <button id="exitgame">
+                    exit game
+                </button>
+            </div>
+
+        </div>
+
+        <div class="warning" id="warning">
+            <div class="waring-message">
+                <p>Are you sure you want to exit the game ?</p>
+                <div class="btnopt">
+                <button id="btnyes" class="btnop">Yes</button>
+                <button id="btnno" class="btnop">No</button>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <script src="./Background.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
